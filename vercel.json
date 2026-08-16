@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "images": {
+    "minimumCacheTTL": 2678400
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/orbitlane-roster.html"
+    }
+  ]
+}

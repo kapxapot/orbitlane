@@ -48,6 +48,9 @@
     }
 
     .demo-notice {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 8px 20px;
       border-bottom: 1px solid var(--line);
       color: var(--muted);
@@ -55,6 +58,19 @@
       font-size: 12px;
       line-height: 1.5;
       text-align: center;
+    }
+
+    .demo-notice a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-left: 4px;
+      font-weight: 650;
+    }
+
+    .demo-notice img {
+      width: 16px;
+      height: 16px;
     }
 
     .shell {
@@ -379,7 +395,7 @@
   </style>
 </head>
 <body>
-  <aside class="demo-notice" aria-label="Demo disclaimer">Demo company page — built with synthetic data from Name to Avatar.</aside>
+  <aside class="demo-notice" aria-label="Demo disclaimer">Demo company page — built with synthetic data from <a href="https://nametoavatar.com" rel="noreferrer"><img src="https://nametoavatar.com/favicon/favicon-32x32.png" alt="">Name to Avatar</a></aside>
   <div class="shell">
     <header>
       <a class="brand" href="#team" aria-label="Orbitlane team">
